@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+    font-family: "Inter";
+    text-align: left;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.txt-1 h1, .txt-2 h2 {
+   color: #FFFFFF;
+   font-size: 28px;
+   font-weight: 500;
+   line-height: 36px;
+   margin: 0;
+}
+.txt-1 p, .txt-2 p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #FFFFFF66;
+    margin: 0;
+}
+.txt-1 {
+    margin-bottom: 42px;
+}
+.card {
+    background-color: #3D3D3D;
+    box-shadow: 0px 0px 2px 0px #0000001F,
+     0px 4px 8px 0px #00000024;
+    width: 416px;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 16px;
+}
+.card img {
+    width: 155px;
+    height: 155px;
+}
+#card-2 h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0;
+}
+#card-2 p {
+    color: #FFFFFF66;
+    margin: 0 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.content-1  {
+    margin: 16px;
+    border-left: 2px solid #FFC453;
+}
+.content-1 h3,
+.content-2 h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 12px;
+}
+.content-2 {
+    margin: 16px;
+    border-left: 2px solid #29E489;
+}
