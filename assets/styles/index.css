@@ -11,8 +11,7 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 .left .right {
   display: flex;
@@ -23,7 +22,6 @@ body {
 }
 .right {
   width: 70%;
-  margin-left: -16px;
 }
 .row {
   display: flex;
@@ -101,12 +99,15 @@ li {
   border-bottom: 1px solid #29292980;
   transition: background-color 0.5s ease;
 }
+a {
+  border-bottom: 1px solid #29292980;
+}
+a li:last-of-type {
+  border-bottom: none;
+}
 li:hover {
   background-color: #292929;
   border-radius: 5px;
-}
-li:last-of-type {
-  border-bottom: none;
 }
 .last-card img {
   border-radius: 50%;
@@ -135,7 +136,7 @@ li:last-of-type {
 }
 .heading {
   padding: 16px 16px 16px 0;
-  margin: 0 16px 16px 0 ;
+  margin: 0 16px 16px 0;
 }
 .heading span {
   padding: 10px 16px;
@@ -144,6 +145,10 @@ li:last-of-type {
   font-size: 16px;
   font-weight: 600;
   transition: background-color 0.5s ease;
+  border-bottom: none;
+}
+.heading a {
+  border-bottom: none;
 }
 .heading span:hover {
   background-color: #292929;
@@ -168,10 +173,10 @@ li:last-of-type {
   padding: 16px;
 }
 .last-row {
-    margin-top: -16px;
+  margin-top: -16px;
 }
 .fix {
-    margin-left: 0;
+  margin-left: 0;
 }
 .last-row p {
   font-size: 20px;
@@ -203,7 +208,6 @@ li:last-of-type {
   justify-content: space-around;
   margin: 8px;
   padding: 8px 0;
-
 }
 .box span {
   font-size: 16px;
@@ -211,15 +215,28 @@ li:last-of-type {
   line-height: 22px;
   text-align: center;
   margin-top: 8px;
-  color:#FFFFFF;
+  color: #ffffff;
 }
 .fix-1 {
   margin-bottom: 100px;
 }
-.btn a{
+.btn a {
   transition: background-color 0.5s ease;
+  border-bottom: none;
 }
 .btn a:hover {
   background-color: #292929;
   border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    width: 100%;
+  }
+  .foo {
+    display: none;
+  }
 }
